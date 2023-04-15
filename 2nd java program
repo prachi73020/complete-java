@@ -1,0 +1,20 @@
+class triangle{
+    int a,b,c;
+    public double getarea(){
+        double s=(a+b+c)/2;
+        return Math.pow((s*(s-a)*(s-b)*(s-c)),.5);
+    }
+    public double getparameter(){
+        return (a+b+c)/2;
+    }
+}
+class Main{
+    public static void main(String[]args){
+        triangle t=new triangle();
+        t.a=2;
+        t.b=3;
+        t.c=4;
+        System.out.println(t.getarea());
+        System.out.println(t.getparameter());
+    }
+}
