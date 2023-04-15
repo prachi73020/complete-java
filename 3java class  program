@@ -1,0 +1,25 @@
+class Rectangle{
+    
+    int length;
+    int breadth;
+    
+    public Rectangle(int l,int b){
+        length=l;
+        breadth=b;
+    }
+    int getarea(){
+        return length*breadth;
+    }
+    int getparameter(){
+        return 2*(length*breadth);
+    }
+}
+
+    public class Main{
+        public static void main(String[] args){
+            Rectangle a=new Rectangle(2,3);
+            Rectangle b=new Rectangle(4,5);
+            System.out.println("area is"+a.getarea()+"parameter is"+a.getparameter());
+            System.out.println("area is"+b.getarea()+"parameter is"+b.getparameter());
+        }
+    }
