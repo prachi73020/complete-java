@@ -1,0 +1,39 @@
+class Shapes
+{
+    void area()
+    {
+        System.out.println("I am in shapes");
+    }
+    
+}
+ class Circle extends Shapes
+{
+    void area()
+    {
+        System.out.println("area is pi*r*r");
+    }
+}
+class Square extends Shapes
+{
+    void area()
+    {
+        System.out.println("Area is 0.5 * h* b");
+    }
+}
+ class Triangle extends Shapes
+{
+    void area()
+    {
+        System.out.println("Area is square of height");
+    }
+}
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Square s1=new Square();
+        Circle c1=new Circle();
+        Triangle t1=new Triangle();
+        c1.area();
+    }
+}
