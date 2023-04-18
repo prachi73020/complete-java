@@ -1,0 +1,29 @@
+//runtime or dynamic polymorphism achieved by method overriding
+class Shapes
+{
+    void area()
+    {
+        System.out.println("shapes of all");
+    }
+    
+}
+class Circle extends Shapes{
+    //this will run when object of circle is created
+    //hence it is overriding the parent method
+    //this is called annotation
+   
+   @Override
+    void area()
+    {
+        System.out.println("area is pi*r*r");
+    }
+}
+public class Main {
+  public static void main(String[] args)
+  {
+      Shapes s1=new Shapes();
+      Circle c1=new Circle();
+      s1.area();
+      c1.area();
+  }
+}
