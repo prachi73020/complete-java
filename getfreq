@@ -1,0 +1,28 @@
+import java.util.*;
+public class Main 
+{
+    public static void main(String[]args)
+    {
+      Scanner sc=new Scanner(System.in);
+      int x=sc.nextInt();
+      int d=sc.nextInt();
+      int n;
+      int f=getfreq(x,d);
+      System.out.println("frequency is="+f);
+    }
+    static int getfreq(int x,int d)
+    {
+        int n;
+        int count=0;
+        while(x>0)
+        {
+            n=x%10;
+            x=x/10;
+            if(n==d)
+            {
+                count++;
+            }
+        }
+        return count;
+    }
+}
