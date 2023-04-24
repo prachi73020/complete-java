@@ -1,0 +1,45 @@
+import java.util.*;
+public class Main
+{
+    public static void main (String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int b1=sc.nextInt();
+        int b2=sc.nextInt();
+        int BB=AnyBaseToAnyBase(n,b1,b2);
+        System.out.println("value is"+BB);
+    }
+    static int AnyBaseToAnyBase(int n,int b1,int b2)
+    {
+        int dec=AnyBaseToDecimal(n,b2);
+        int dn=DecimalToAnyBase(dec,b1);
+        return dn;
+    }
+    static int DecimalToAnyBase(int n,int b1)
+    {
+        int d=1;
+        int rv=0;
+        while(n>0)
+        {
+            int rem=n%b1;
+            n=n/b1;
+            rv+=rem*d;
+            d=d*10;
+        }
+        return rv;
+    }
+    static int AnyBaseToDecimal(int n,int b2)
+    {
+        int rv=0;
+        int d=1;
+        while(n>0)
+        {
+            int rem=n%10;
+            n=n/10;
+            rv+=rem*d;
+            d=d*b2;
+        }
+        return rv;
+    }
+}
