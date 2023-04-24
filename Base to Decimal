@@ -1,0 +1,25 @@
+import java.util.*;
+public class Main 
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int b=sc.nextInt();
+        int val=BaseToDecimal(n,b);
+        System.out.println("value is"+val);
+    }
+    static int BaseToDecimal(int n,int b)
+    {
+        int p=1;
+        int rv=0;
+        while(n>0)
+        {
+            int rem=n%10;
+            n=n/10;
+            rv=rv+rem*p;
+            p=b*p;
+        }
+        return rv;
+    }
+}
