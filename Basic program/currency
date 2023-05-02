@@ -1,0 +1,39 @@
+import java.util.*;
+public class Main
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int two=0,ten=0,fifty=0,hundred=0,fivehundred=0;
+        int money=sc.nextInt();
+        if(money>=500)
+        {
+           fivehundred=money/500;
+           money=money%500;
+        }
+        if(money>=100)
+        {
+            hundred=money/100;
+            money=money%100;
+        }
+        if(money>=50)
+        {
+            fifty=money/50;
+            money=money%50;
+        }
+        if(money>=ten)
+        {
+            ten=money/10;
+            money=money%10;
+        }
+        if(money>=two)
+        {
+            two=money/10;
+            money=money%2;
+        }
+        System.out.println("money 100 is"+hundred);
+        System.out.println("money 500 is"+fivehundred);
+         System.out.println("money 10 is"+ten);
+         
+    }
+}
