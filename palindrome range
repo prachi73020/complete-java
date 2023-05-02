@@ -1,0 +1,24 @@
+import java.util.*;
+class Main 
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int n,sum=0,i,y;
+        for( i=a;i<=b;i++)
+        {
+            sum=0;
+            y=i;
+            while(y!=0)
+            {
+                n=y%10;
+                sum=sum*10+n;
+                y=y/10;
+            }
+            if(i==sum)
+            System.out.println(i);
+        }
+    }
+}
