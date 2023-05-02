@@ -1,0 +1,27 @@
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        //int x=sc.nextInt();
+        int p=sc.nextInt();
+        int n;
+        int sum=0;
+        int y;
+        for(int i=a;i<=b;i++)
+        {
+            y=i;
+            while(y!=0)
+            {
+             n=y%10;
+             sum+=Math.pow(n,p);
+             y=y/10;
+            }
+            if(i==sum)
+            System.out.println(i);
+            sum=0;
+        }
+    }
