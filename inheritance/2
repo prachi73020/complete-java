@@ -1,0 +1,25 @@
+import java.util.*;
+class one 
+{
+    public void name()
+    {
+        System.out.println("prachi");
+    }
+}
+class two extends one
+{
+    public void lastname()
+    {
+        System.out.println("Sharma");
+    }
+}
+public class Main 
+{
+    public static void main(String[]args)
+    {
+        two t2= new two();
+        t2.name();
+        t2.lastname();
+       
+    }
+}
