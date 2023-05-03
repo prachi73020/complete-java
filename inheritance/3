@@ -1,0 +1,31 @@
+class first 
+{
+    public void name()
+    {
+        System.out.println("prachi");
+    }
+}
+class second extends first
+{
+    public void middlename()
+    {
+        System.out.println("no middle name");
+    }
+}
+class third extends second
+{
+    public void lastname()
+    {
+        System.out.println("sharma");
+    }
+}
+public class Main 
+{
+    public static void main(String[]args)
+    {
+        third t1=new third();
+        t1.name();
+        t1.middlename();
+        t1.lastname();
+    }
+}
