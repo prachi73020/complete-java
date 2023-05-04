@@ -1,0 +1,15 @@
+//area of parallelogram
+import java.util.*;
+class Main 
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+            System.out.println(" enter base:");
+            int b=sc.nextInt();
+            System.out.println(" ente height:");
+            int h=sc.nextInt();
+            int area=b*h;
+            System.out.println(" area of parallelogran is="+area);
+    }
+}
