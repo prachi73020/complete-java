@@ -1,0 +1,79 @@
+import java.util.*;
+public class Main 
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        
+       /* --------------------------------------------->
+       int a[]=new int[5];
+        a[0]=1;
+        a[1]=2;
+        a[2]=3;
+        a[3]=4;
+        a[4]=5;
+        System.out.println(a[2]);*/
+        
+        /*--------------------------------------------->
+        int a[]=new int[5];
+        a[0]=1;
+        a[1]=2;
+        a[2]=3;
+        a[3]=4;
+        a[4]=5;
+        for(int i=0;i<a.length;i++)
+        {
+            System.out.println(a[i]+" ");*/
+            
+        /*-------------------------------------------->
+        int a[]=new int[5];
+        for(int i=0;i<a.length;i++)
+        {
+            a[i]=sc.nextInt();
+        }
+        for(int i=0;i<a.length;i++)
+        {
+            System.out.println(a[i]+" ");
+        }*/
+       /*-------------------------------------------->
+       int a[]=new int[5];
+        for(int i=0;i<a.length;i++)
+        {
+            a[i]=sc.nextInt();
+        }
+        System.out.println(Arrays.toString(a));
+       */
+      /*-------------------------------------------->
+      int a[]=new int[5];
+       for(int i=0;i<a.length;i++)
+       {
+           a[i]=sc.nextInt();
+       }
+       for(int num:a)
+       {
+           System.out.println(num+" ");
+       }
+       */
+      /*--------------------------------------------->
+      String[]s=new String[5];
+       for(int i=0;i<a.length;i++)
+       {
+           s[i]=sc.next();
+       }
+       System.out.println(Arrays.toString(s));
+       */
+      /*--------------------------------------------> 
+      int n=sc.nextInt();
+       String[] str = new String[n];
+        for (int i = 0; i < n; i++) {
+            str[i] = sc.next();
+        }
+
+        System.out.println(Arrays.toString(str));
+
+        str[1] = "life";
+
+        System.out.println(Arrays.toString(str));
+        */
+    }
+}
