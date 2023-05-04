@@ -1,0 +1,15 @@
+//area of rhombus
+import java.util.*;
+class Main 
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+            System.out.println(" enter diagonal 1");
+            int d1=sc.nextInt();
+            System.out.println(" enter diagonal 2:");
+            int d2=sc.nextInt();
+            int area=d1*d2/2;
+            System.out.println(" area of rhombus is="+area);
+    }
+}
