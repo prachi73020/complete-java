@@ -60,7 +60,7 @@ class Main
        }
        while(idx<diff.length)
        {
-          System.out.println();
+          System.out.println(diff[idx]);
           idx++;
        }
     }
