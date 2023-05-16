@@ -5,13 +5,15 @@ class Main
     {
        Scanner sc=new Scanner(System.in);
        int n1=sc.nextInt();
-       int n2=sc.nextInt();
+       
        int []a1=new int[n1];
-       int []a2=new int[n2];
+       
        for(int i=0;i<a1.length;i++)
        {
           a1[i]=sc.nextInt();
        }
+       int n2=sc.nextInt();
+       int []a2=new int[n2];
        for(int i=0;i<a2.length;i++)
        {
            a2[i]=sc.nextInt();
@@ -27,7 +29,7 @@ class Main
        {
            int d=0;
            int a1v=i>=0?a1[i]:0;
-           
+          // System.out.println(j);
            if(a2[j]+c>=a1v)
            {
                d=a2[j]+c-a1v;
@@ -50,7 +52,8 @@ class Main
        {
            if(diff[idx]==0){
            idx++;
-           }else
+           }
+           else
            {
                break;
            }
@@ -58,6 +61,7 @@ class Main
        while(idx<diff.length)
        {
           System.out.println();
+          idx++;
        }
     }
     }
