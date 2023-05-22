@@ -1,0 +1,24 @@
+//find the peak element which is not smaller then its naighbour
+import java.util.*;
+public class Main 
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+            int n=sc.nextInt();
+            int a[]=new int[n];
+            for(int i=0;i<a.length;i++)
+            {
+                a[i]=sc.nextInt();
+            }
+            int peak=0;
+            for(int i=1;i<a.length;i++)
+            {
+                if(peak<a[i])
+                {
+                    peak=a[i];
+                }
+            }
+             System.out.println(peak);
+    }
+}
