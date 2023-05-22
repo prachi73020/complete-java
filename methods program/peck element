@@ -1,0 +1,28 @@
+import java.util.*;
+public class Main 
+{
+    static int peck(int n,int a[])
+    {
+        int peck=0;
+        for(int i=1;i<n;i++)
+        {
+            if(peck<a[i])
+            {
+                peck=a[i];
+            }
+        }
+        return peck;
+    }
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int a[]=new int[n];
+        for(int i=0;i<a.length;i++)
+        {
+            a[i]=sc.nextInt();
+        }
+        int p=peck(n,a);
+        System.out.println("peck element is:"+p);
+    }
+}
