@@ -11,7 +11,7 @@ public class Main
         {
             a[i]=sc.nextInt();
         }
-        int limit=(int)Math.pow(n,a.length);
+        int limit=(int)Math.pow(2,a.length);
         
         for(int i=0;i<limit;i++)
         {
