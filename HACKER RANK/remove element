@@ -1,0 +1,22 @@
+import java.util.*;
+public class Main 
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int a[]={1,2,2,3,4,5,6,6,7,8};
+        int val=sc.nextInt();
+        int j=0;
+        for(int i=0;i<a.length;i++)
+        {
+            if(val!=a[i])
+            {
+                a[j++]=a[i];
+            }
+            System.out.print(a[j]+" ");
+            
+        }
+        System.out.println(j++);
+        
+    }
+}
