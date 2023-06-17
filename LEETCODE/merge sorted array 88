@@ -1,0 +1,53 @@
+import java.util.*;
+public class Main 
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int m=sc.nextInt();
+        int n=sc.nextInt();
+        int z=m+n;
+        int num1[]=new int[m];
+        int num2[]=new int[n];
+         int num3[]=new int[z];
+        for(int i=0;i<m;i++)
+        {
+            num1[i]=sc.nextInt();
+        }
+        for(int i=0;i<n;i++)
+        {
+            num2[i]=sc.nextInt();
+        }
+        int i=0;
+        for(int j=0;j<m;j++)
+        {
+            num3[i]=num1[j];
+            i++;
+        }
+        for(int j=0;j<n;j++)
+        {
+            num3[i]=num2[j];
+            i++;
+        }
+       Arrays.sort(num3);
+        for(i=0;i<z;i++)
+        {
+            System.out.print(num3[i]+" ");
+
+//<----------------------------------------------------------------->
+class Solution 
+{
+    public void merge(int[] nums1, int m, int[] nums2, int n) 
+    {
+        int i=m;
+       for(int j=0;j<n;j++)
+       {
+           nums1[i]=nums2[j];
+           i++;
+       }
+        Arrays.sort(nums1);
+    }
+}
+        }
+    }
+}
