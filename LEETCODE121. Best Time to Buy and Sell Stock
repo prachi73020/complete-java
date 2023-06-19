@@ -1,0 +1,21 @@
+class Solution {
+    public int maxProfit(int[] prices) 
+    {
+        int LSF=Integer.MAX_VALUE;
+        int OP=0;
+        int PIST=0;
+        for(int i=0;i<prices.length;i++)
+        {
+            if(prices[i]<LSF)
+            {
+                LSF=prices[i];
+            }
+            PIST=prices[i]-LSF;
+            if(OP<PIST)
+            {
+                OP=PIST;
+            }
+        }
+    return OP;
+    }
+}
